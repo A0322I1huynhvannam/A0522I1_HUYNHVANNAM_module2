@@ -1,4 +1,4 @@
-package danh_sach.bai_tap;
+package danh_sach.bai_tap.MyLinkedlist;
 
 public class MyLinkedList1<E> {
     public class Node {

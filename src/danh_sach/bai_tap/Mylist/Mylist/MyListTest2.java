@@ -1,4 +1,4 @@
-package danh_sach.bai_tap;
+package danh_sach.bai_tap.Mylist.Mylist;
 
 public class MyListTest2 {
     String name;
@@ -26,7 +26,7 @@ public class MyListTest2 {
     }
 
     public static void main(String[] args) {
-        MyList list = new MyList();
+        danh_sach.bai_tap.Mylist.Mylist.MyList list = new danh_sach.bai_tap.Mylist.Mylist.MyList();
         list.add(0,new MyListTest2("Huynh van nam"));
         list.add(1,new MyListTest2("Huynh van nam1"));
         list.add(2,new MyListTest2("Huynh van nam2"));

@@ -1,4 +1,9 @@
 package debug.bai_tap;
 
-public class IllegalTriangleException {
+import java.util.Scanner;
+
+public class IllegalTriangleException extends Exception{
+   IllegalTriangleException(String s){
+       super(s);
+   }
 }

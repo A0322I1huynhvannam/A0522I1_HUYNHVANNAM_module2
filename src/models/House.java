@@ -34,6 +34,11 @@ public class House extends Facility {
         return this.toString();
     }
 
+    @Override
+    public Object getIdFacilyty() {
+        return null;
+    }
+
     public static void main(String[] args) {
         House house=new House("2 tang");
         System.out.println(house);

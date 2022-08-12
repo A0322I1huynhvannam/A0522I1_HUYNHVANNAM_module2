@@ -46,4 +46,6 @@ public abstract class Person {
                 '}';
     }
     public abstract String show();
+
+//    public abstract int getId();
 }

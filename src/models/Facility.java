@@ -46,4 +46,6 @@ public abstract class Facility {
     }
 
     public abstract String show();
+
+    public abstract Object getIdFacilyty();
 }

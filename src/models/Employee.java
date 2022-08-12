@@ -31,9 +31,4 @@ public class Employee extends Person {
     public String show() {
         return this.toString();
     }
-
-    public static void main(String[] args) {
-        Employee employee = new Employee("nam",324243,"dn","40 trieu");
-        System.out.println(employee);
-    }
 }

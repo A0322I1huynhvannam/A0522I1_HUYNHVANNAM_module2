@@ -14,6 +14,10 @@ public class Villa extends Facility {
         this.numberOfFloor = numberOfFloor;
     }
 
+    public Villa() {
+
+    }
+
     public int getNumberOfFloor() {
         return numberOfFloor;
     }
@@ -32,6 +36,11 @@ public class Villa extends Facility {
     @Override
     public String show() {
         return this.toString();
+    }
+
+    @Override
+    public Object getIdFacilyty() {
+        return null;
     }
 
     public static void main(String[] args) {

@@ -34,6 +34,11 @@ public class Room extends Facility {
         return this.toString();
     }
 
+    @Override
+    public Object getIdFacilyty() {
+        return null;
+    }
+
     public static void main(String[] args) {
         Room room=new Room("nam",4,7,"sleep");
         System.out.println(room);

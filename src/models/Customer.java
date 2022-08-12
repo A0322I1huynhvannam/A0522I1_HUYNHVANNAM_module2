@@ -1,15 +1,18 @@
 package models;
 
 public class Customer extends Person {
-     private String endow;
-     private String membershipcard;
-     public Customer(){
-     }
-     public Customer(String ten , long cccd , String diachi, String endow, String membershipcard){
-         super(ten, cccd, diachi);
-         this.endow=endow;
-         this.membershipcard=membershipcard;
-     }
+    private String endow;
+    private String membershipcard;
+
+    public Customer() {
+    }
+
+    public Customer(String ten, long cccd, String diachi, String endow, String membershipcard) {
+        super(ten, cccd, diachi);
+        this.endow = endow;
+        this.membershipcard = membershipcard;
+    }
+
     public String getEndow() {
         return endow;
     }
@@ -29,6 +32,9 @@ public class Customer extends Person {
     @Override
     public String toString() {
         return "Customer{" +
+                "ten='" + ten + '\'' +
+                ", cccd=" + cccd +
+                ", diachi='" + diachi + '\'' +
                 "endow='" + endow + '\'' +
                 ", membershipcard='" + membershipcard + '\'' +
                 '}';
@@ -39,8 +45,13 @@ public class Customer extends Person {
         return this.toString();
     }
 
+//    @Override
+//    public int getId() {
+//        return 0;
+//    }
+
     public static void main(String[] args) {
-        Customer customer = new Customer("nam",323232,"ddn","thanh vien vip giam 20%","thanh vien the vip");
+        Customer customer = new Customer("nam", 323232, "ddn", "thanh vien vip giam 20%", "thanh vien the vip");
         System.out.println(customer);
     }
 }

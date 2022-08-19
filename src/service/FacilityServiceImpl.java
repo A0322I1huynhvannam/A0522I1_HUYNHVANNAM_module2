@@ -1,7 +1,10 @@
 package service;
 
-public interface FacilityManagement {
+public interface FacilityServiceImpl {
     void addservice();
+    void addVilla();
+    void addHouse();
+    void addRoom();
     void displayservice();
-    void editservice();
+    void displayeditservice();
 }

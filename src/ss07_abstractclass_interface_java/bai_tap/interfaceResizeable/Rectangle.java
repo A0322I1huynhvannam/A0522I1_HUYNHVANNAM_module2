@@ -1,6 +1,6 @@
-package ss07_abstractclass_interface_java.bai_tap;
+package ss07_abstractclass_interface_java.bai_tap.interfaceResizeable;
 
-import java.util.Scanner;
+import ss07_abstractclass_interface_java.bai_tap.Resizeable;
 
 public class Rectangle implements Resizeable {
     private double chieudai;
@@ -9,8 +9,6 @@ public class Rectangle implements Resizeable {
     public Rectangle(double chieudai, double chieurong) {
         this.chieudai = chieudai;
         this.chieurong = chieurong;
-    }
-    public Rectangle(){
     }
 
     public double getChieudai() {
@@ -29,12 +27,11 @@ public class Rectangle implements Resizeable {
         this.chieurong = chieurong;
     }
     public double dientich(){
-        return this.chieudai*this.chieurong;
+     return  this.chieurong*this.chieudai;
     }
     public double chuvi(){
-        return (this.chieurong+this.chieudai)*2;
+        return (this.chieudai+this.chieurong)*2;
     }
-
 
     @Override
     public String toString() {
@@ -44,18 +41,19 @@ public class Rectangle implements Resizeable {
                 '}';
     }
 
-    public void resize(double percent){
-        this.chieurong = chieurong * (1+percent/100);
-        this.chieudai = chieudai * (1+percent/100);
+    @Override
+    public void resize(double percent) {
+        this.chieudai = chieudai + (1+percent/100);
+        this.chieurong = chieurong + (1+percent/100);
+
     }
 
     public static void main(String[] args) {
-        Rectangle recc1 = new Rectangle(10,20);
-        System.out.println(recc1);
-        System.out.println("dien tich hcn la "+recc1.dientich());
-        System.out.println("chu vi la "+recc1.chuvi());
-        recc1.resize(10);
-        System.out.println(recc1);
+        Rectangle rectangle = new Rectangle(10,20);
+        System.out.println(rectangle);
+        System.out.println("dien tich hcn la "+rectangle.dientich());
+        System.out.println("chu vi la "+rectangle.chuvi());
+        rectangle.resize(10);
+        System.out.println(rectangle);
     }
-
 }

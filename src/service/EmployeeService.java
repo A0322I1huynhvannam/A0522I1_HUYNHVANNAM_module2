@@ -1,4 +1,11 @@
 package service;
 
-public class EmployeeService {
+public interface EmployeeService {
+
+    void addname();
+
+    void displayname();
+
+    void editname();
+
 }

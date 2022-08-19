@@ -1,4 +1,4 @@
-package ss03_mang_phuong_thuc_java.bai_tap;
+package thi.controllers;
 
 import java.util.Scanner;
 

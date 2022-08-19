@@ -1,4 +1,6 @@
-package ss07_abstractclass_interface_java.bai_tap;
+package ss07_abstractclass_interface_java.bai_tap.interfaceResizeable;
+
+import ss07_abstractclass_interface_java.bai_tap.Resizeable;
 
 public class Circle implements Resizeable {
     protected double radius = 2.0;
@@ -39,7 +41,6 @@ public class Circle implements Resizeable {
                 ", color='" + color + '\'' +
                 '}';
     }
-
     @Override
     public void resize(double percent) {
         this.radius=this.radius*(1+percent/100);

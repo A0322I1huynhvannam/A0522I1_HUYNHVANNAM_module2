@@ -17,6 +17,7 @@ public class ThemPhanTuVaoMang {
         }
         System.out.println("Nhap phan tu k =");
         int k = scanner.nextInt();
+
     }
 }
 

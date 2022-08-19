@@ -1,4 +1,10 @@
 package service;
 
-public class CustomerService {
+public interface CustomerService {
+
+     void add();
+
+     void display();
+
+     void editProduct();
 }

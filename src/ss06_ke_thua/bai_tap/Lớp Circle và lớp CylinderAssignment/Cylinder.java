@@ -2,7 +2,7 @@ package ss06_ke_thua.bai_tap;
 
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 
-public class Cylinder extends Circle {
+public class Cylinder extends ss06_ke_thua.bai_tap.Circle {
     double height;
 
     public Cylinder() {

@@ -1,28 +1,31 @@
 package ss05_access_modifier.bai_tap;
 
-public class AccessModifier {
-    private int radius=1;
-    private String color="red";
+import java.util.Scanner;
 
-    protected AccessModifier(int radius){
-        this.radius=radius;
+public class AccessModifier {
+    private double radius = 1.0;
+    private String color = "red";
+    public AccessModifier(){}
+
+    protected AccessModifier(double radius) {
+        this.radius = radius;
     }
 
-    public int getRadius(){
+    public double getRadius() {
         return this.radius;
     }
 
     public double getArea() {
-        return getRadius()*getRadius()*Math.PI;
+        return getRadius() * getRadius() * Math.PI;
     }
 
     public String getColor() {
-        return color="black";
+        return color = "black";
     }
 
     public static void main(String[] args) {
-        AccessModifier n=new AccessModifier(9);
+        AccessModifier n = new AccessModifier(9.5);
         System.out.println("Đối tượng hình tròn có: ");
-        System.out.println("Bán kính đường tròn là: " + n.getRadius()+"\nDiện tích là: "+ n.getArea()+ "\nMàu: "+ n.getColor());
+        System.out.println("Bán kính đường tròn là: " + n.getRadius() + "\nDiện tích là: " + n.getArea() + "\nMàu: " + n.getColor());
     }
 }

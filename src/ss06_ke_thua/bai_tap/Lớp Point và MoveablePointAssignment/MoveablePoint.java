@@ -1,6 +1,6 @@
 package ss06_ke_thua.bai_tap;
 
-public class MoveablePoint extends Point {
+public class MoveablePoint extends ss06_ke_thua.bai_tap.Point {
     private double xSpeed = 0.0;
     private double ySpeed = 0.0;
     public MoveablePoint(){

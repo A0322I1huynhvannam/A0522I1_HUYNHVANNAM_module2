@@ -1,5 +1,7 @@
 package ss05_access_modifier.bai_tap;
 
+import java.util.Scanner;
+
 public class Student {
     private String name;
     private String classes;
@@ -40,7 +42,9 @@ public class Student {
     }
 
     public static void main(String[] args) {
-        Student n=new Student("nam","A0322i1");
-        System.out.println("Moi :"+n.classes+n.name);
+       Student m = new Student();
+        System.out.println("Gia Tri Mac Dinh : "+m.name  +  m.classes);
+        Student n=new Student("nam",  "A0322i1");
+        System.out.println("Gia Tri Moi :"+n.classes  + n.name);
     }
 }

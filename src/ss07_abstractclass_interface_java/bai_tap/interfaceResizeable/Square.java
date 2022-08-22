@@ -1,6 +1,5 @@
 package ss07_abstractclass_interface_java.bai_tap.interfaceResizeable;
 
-import ss07_abstractclass_interface_java.bai_tap.Resizeable;
 
 import java.util.Scanner;
 

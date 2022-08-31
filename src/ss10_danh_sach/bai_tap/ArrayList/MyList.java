@@ -2,7 +2,7 @@ package ss10_danh_sach.bai_tap.ArrayList;
 
 import java.util.Arrays;
 
-public class MyList<E> {
+public class MyList<E>  {
     private int DEFAULT_CAPACITY = 10;
     private E[] elements;
     private int size;

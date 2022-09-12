@@ -1,4 +1,6 @@
-package ss12_khung_suu_tap.bai_tap;
+package ss12_khung_suu_tap.bai_tap.controllers;
+
+import ss12_khung_suu_tap.bai_tap.models.Product;
 
 import java.util.Comparator;
 

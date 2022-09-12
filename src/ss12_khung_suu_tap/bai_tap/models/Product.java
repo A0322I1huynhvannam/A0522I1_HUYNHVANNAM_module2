@@ -1,6 +1,4 @@
-package ss12_khung_suu_tap.bai_tap;
-
-import java.util.Scanner;
+package ss12_khung_suu_tap.bai_tap.models;
 
 public class Product {
     private String id;

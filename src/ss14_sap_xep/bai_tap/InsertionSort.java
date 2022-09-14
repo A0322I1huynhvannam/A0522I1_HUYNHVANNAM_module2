@@ -18,7 +18,7 @@ public class InsertionSort {
 
     public static void main(String[] args) {
         int [] myArray = {2,3,4,6,8,2,9};
-        sort(myArray);
+        Sort(myArray);
         System.out.println(Arrays.toString(myArray));
     }
 }

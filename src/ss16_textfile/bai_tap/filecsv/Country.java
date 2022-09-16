@@ -1,4 +1,4 @@
-package ss16_text_file.bai_tap;
+package ss16_textfile.bai_tap;
 
 public class Country {
     private int id;
@@ -47,4 +47,3 @@ public class Country {
                 '}';
     }
 }
-

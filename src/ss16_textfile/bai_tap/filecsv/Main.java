@@ -1,15 +1,18 @@
-package ss16_text_file.bai_tap;
+package ss16_textfile.bai_tap;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main1 {
+public class Main {
     public static void main(String[] args) {
+
         BufferedReader br = null;
         try {
             String line;
-            br = new BufferedReader(new FileReader("countries.csv"));
+            br = new BufferedReader(new FileReader("D:\\codegym\\A0522I1huynhvannam\\Module2\\A0522i1_HUYNHVANNAM_module_2\\src\\ss16_textfile\\bai_tap\\countries.csv"));
 
             while ((line = br.readLine()) != null) {
                 printCountry(parseCsvLine(line));
@@ -46,5 +49,4 @@ public class Main1 {
                         + " , name=" + country.get(2)
                         + "]");
     }
-    }
-
+}

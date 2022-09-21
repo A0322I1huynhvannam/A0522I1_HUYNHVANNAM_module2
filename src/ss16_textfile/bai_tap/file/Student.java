@@ -1,14 +1,13 @@
-package ss16_textfile.bai_tap;
+package ss16_textfile.bai_tap.file;
 
-public class Country {
+public class Student {
     private int id;
     private String code;
     private String name;
 
-    public Country() {
-    }
+    public Student(){}
 
-    public Country(int id, String code, String name) {
+    public Student(int id, String code, String name) {
         this.id = id;
         this.code = code;
         this.name = name;
@@ -40,7 +39,7 @@ public class Country {
 
     @Override
     public String toString() {
-        return "Country{" +
+        return "Student{" +
                 "id=" + id +
                 ", code='" + code + '\'' +
                 ", name='" + name + '\'' +
